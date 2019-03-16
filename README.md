@@ -1,2 +1,2 @@
-# MISIS-Homework-C-
+# MISIS-Homework C++
 C++ classes homework
