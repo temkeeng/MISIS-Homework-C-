@@ -1,0 +1,22 @@
+#include <iostream> 
+#include <cstdlib> 
+using namespace std; 
+
+int main() 
+{ 
+    int a[20];
+    
+    for(int k=0;k<20;k++)
+    a[k]=k+1;
+    
+    for(int k=0;k<20;k++)
+    for(int i=2;i<a[k];i++)
+    {
+        if (a[k]%i==0) a[k]=0;
+    }
+    
+    for(int k=0;k<20;k++)
+    cout << a[k] << " ";
+    
+    return 0; 
+}
