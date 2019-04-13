@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+	int n;
+	int count = 0;
+	int i;
+	int a[1000];
+	a[0] = 1;
+	a[1] = 1;
+	cin >> n;
+	if (n < 0) return 0;
+		for ( i = 2; a[i-1] < n; i++)
+		{	a[i] = a[i - 1] + a[i - 2]; }
+		for (int j = 0; j < i-1; j++)
+				cout << a[j] << " ";
+
+	system("pause");
+	return 0;
+}
+
+
