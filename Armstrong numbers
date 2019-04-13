@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+	int a1, a2, a3,num;
+	for (int i = 100; i < 1000; i++)
+	{
+
+
+		a1 = i / 100;
+		a2 = (i / 10) % 10;
+		a3 = i % 10;
+		num = pow(a1, 3) + pow(a2, 3) + pow(a3, 3);
+		if (i == num) cout << i << " ";
+	}
+	system("pause");
+	return 0;
+}
+
+
