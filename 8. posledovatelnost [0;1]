@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
+int main()
+{
+	int n,o1=0,o2=0,o3=0,o4=0;
+	srand(1);
+	float a;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		a = float(rand() % 100)/100;
+		if (a < 0.25) o1++;
+		else if (a < 0.5) o2++;
+		else if (a < 0.75) o3++;
+		else o4++;
+	}
+	cout << "[0;0,25) = " << o1<<endl;
+	cout << "[0,25;0,5) = " << o2<<endl;
+	cout << "[0,5;0,75) = " << o3<<endl;
+	cout << "[0,75;1) = " << o4<<endl;
+	system("pause");
+}
+
