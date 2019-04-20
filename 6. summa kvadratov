@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int change(int m, int n);
+int change2(int m, int n);
+int main()
+{
+	int a, b, i,sum=0;
+	cin >> a >> b;
+	for (i = change2(a,b); i <= change(a,b); i++)
+		sum+=i*i;
+	cout << sum << endl;
+	system("pause");
+}
+int change(int m, int n)
+{
+	if (n > m) return n;
+	else return m;
+}
+int change2(int m, int n)
+{
+	if (n < m) return n;
+	else return m;
+}
+
